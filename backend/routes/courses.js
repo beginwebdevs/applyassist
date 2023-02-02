@@ -15,6 +15,33 @@ router.get('/allcourseslocation', async (req, res) => {
     res.json(courselocationdata);
 })
 
+router.get('/filtercourse', async (req, res) => {
+    let data = {}   
+    if(req.query.course_type) {
+        data.course_type = req.query.course_type;
+    }
+    if(req.query.field_of_study) {
+        data.field_of_study = req.query.field_of_study;
+    }
+    if(req.query.area_of_study) {
+        data.area_of_study = req.query.area_of_study;
+    }
+    if(req.query.sub_area_of_study) {
+        data.sub_area_of_study = req.query.sub_area_of_study;
+    }
+    if(req.query.course_duration) {
+        data.course_duration = req.query.course_duration;
+    }
+    if(req.query.intakes) {
+        data.intakes = req.query.intakes;
+    }
+    if(req.query.post_study_work_visa) {
+        data.post_study_work_visa = req.query.post_study_work_visa;
+    }
+    let requireddata = await Courses.find(data);
+    res.json(requireddata);
+})
+
 
 router.post('/addcourse', async (req, res) => {
     let coursefound = await Courses.findOne({ aa_program_id: req.body.aa_program_id });
@@ -30,7 +57,14 @@ router.post('/addcourse', async (req, res) => {
             is_active: req.body.is_active,
             institution_name: req.body.institution_name,
             course_level: req.body.course_level,
+            field_of_study: req.body.field_of_study,
+            area_of_study: req.body.area_of_study,
+            sub_area_of_study: req.body.sub_area_of_study,
+            course_type: req.body.course_type,
             course_name: req.body.course_name,
+            course_duration: req.body.course_duration,
+            intakes: req.body.intakes,
+            post_study_work_visa: req.body.post_study_work_visa,
             session_starts: req.body.session_starts,
             program_overview: req.body.program_overview,
             admission_process: req.body.admission_process,

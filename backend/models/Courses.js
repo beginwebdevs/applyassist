@@ -24,7 +24,35 @@ const courseSchema = new Schema({
         type: String,
         required: true
     },
+    field_of_study: {
+        type: String,
+        required: true
+    },
+    area_of_study: {
+        type: String,
+        required: true
+    },
+    sub_area_of_study: {
+        type: String,
+        required: true
+    },
+    course_type: {
+        type: String,
+        required: true
+    },
     course_name: {
+        type: String,
+        required: true
+    },
+    course_duration: {
+        type: String,
+        required: true
+    },
+    intakes: {
+        type: String,
+        required: true
+    },
+    post_study_work_visa: {
         type: String,
         required: true
     },
