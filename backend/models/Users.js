@@ -23,13 +23,16 @@ const usersSchema = new Schema({
         type: String,
         required: true,
     },
+    otp: {
+        type: String,
+        required: false,
+    },
     is_active: {
         type: Boolean,
         required: true,
         default: 1
     },
     
-
 });
 
 const Users = mongoose.model('users', usersSchema);
