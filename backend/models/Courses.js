@@ -100,6 +100,10 @@ const courseSchema = new Schema({
         type: String,
         required: false
     },
+    course_summary: {
+        type: String,
+        required: false
+    },
     url: {
         type: String,
         required: false
