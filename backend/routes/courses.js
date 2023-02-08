@@ -20,6 +20,9 @@ router.get('/filtercourse', async (req, res) => {
     if(req.query.course_type) {
         data.course_type = req.query.course_type;
     }
+    if(req.query.course_name) {
+        data.course_name = req.query.course_name;
+    }
     if(req.query.field_of_study) {
         data.field_of_study = req.query.field_of_study;
     }
