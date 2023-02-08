@@ -12,6 +12,7 @@ app.use(cors())
 
 // AVAILABLE ROUTES
 
+app.use('/api/universities', require('./routes/universities'))
 app.use('/api/courses', require('./routes/courses'))
 app.use('/api/users', require('./routes/users'))
 app.use('/api/auth', require('./routes/auth'))
