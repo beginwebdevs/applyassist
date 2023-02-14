@@ -18,6 +18,11 @@ app.use('/api/users', require('./routes/users'))
 app.use('/api/auth', require('./routes/auth'))
 
 
+if(process.env.NODE_ENV == "production") {
+  app.use(express.static("frontend/build"));
+}
+
+
 app.listen(port, () => {
   console.log(`Example app listening on port ${port || process.env.PORT}`)
 })
