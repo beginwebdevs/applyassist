@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/static/css/main.3fc4b84b.css",
+    "main.js": "/static/js/main.4dc4f4aa.js",
+    "static/media/univercity01.png": "/static/media/univercity01.b85ae1a52ae969ab22ae.png",
+    "static/media/3.jpg": "/static/media/3.366c572535c91fde0055.jpg",
+    "static/media/univercity02.png": "/static/media/univercity02.95c831e962d8876b7143.png",
+    "static/media/univercity03.png": "/static/media/univercity03.cf02379ce177f68c9025.png",
+    "static/media/univercity04.png": "/static/media/univercity04.cf5f247851f3fcddbf32.png",
+    "static/media/univercity05.png": "/static/media/univercity05.6b77eacc74e174e4654f.png",
+    "static/media/rmit.png": "/static/media/rmit.ae952ec7f27ef8726ead.png",
+    "static/media/google-icon.svg": "/static/media/google-icon.169443fb9271f6cdaf6bee7b36a4c93a.svg",
+    "static/media/Bachelor.svg": "/static/media/Bachelor.b52d005101114599074e2a3ef0b49294.svg",
+    "index.html": "/index.html",
+    "static/media/place.svg": "/static/media/place.4d612396bd91a810728d0f9b1aa90ffe.svg",
+    "static/media/Home.svg": "/static/media/Home.9ba768a33ba17eb89504c17bad673ddc.svg",
+    "static/media/Dollar.svg": "/static/media/Dollar.1797b7b4845209209d70171a9c55242f.svg",
+    "static/media/Exc.svg": "/static/media/Exc.5a6fb798445077f6ae30aebce68204b7.svg",
+    "static/media/Watch.svg": "/static/media/Watch.75a6c747839797be027e0a6ed267c298.svg",
+    "main.3fc4b84b.css.map": "/static/css/main.3fc4b84b.css.map",
+    "main.4dc4f4aa.js.map": "/static/js/main.4dc4f4aa.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3fc4b84b.css",
+    "static/js/main.4dc4f4aa.js"
+  ]
+}
