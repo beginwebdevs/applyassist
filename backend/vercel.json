@@ -1,6 +1,6 @@
 {
     "version" : 2,
     "name": "applyassist_backend",
-    "build": {"src": "index.js", "use": "@vercel/node"},
+    "build": {"use": "@vercel/node"},
     "routes": [{"src": "/(.*)", "dest": "/index.js"}]
 }
